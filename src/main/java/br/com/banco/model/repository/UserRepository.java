@@ -8,9 +8,6 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer> {
-
-    List<User> findByDate(Date date);
-    List<User> findByName(String string);
+public interface UserRepository extends JpaRepository<User, Long> {
 
 }

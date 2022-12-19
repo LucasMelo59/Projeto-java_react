@@ -8,28 +8,30 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "users")
+@Entity(name = "transferencia")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="cd_usuario")
-    private long id;
-    @Column(name = "saldo")
-    private double saldo;
-    @Column(name = "saldo_periodo")
-    private double saldoNoPeriodo;
-    @Column(name ="nome_operador")
-    private String nomeOperadorTranscionado;
-    @Column(name = "data_inicial")
+    @Column(name = "id")
+    private int id;
+    @Column(name = "data_transferencia")
     private Date dataInicio;
-    @Column(name = "data_fim")
-    private Date dataFim;
-    @Column(name = "valentia")
+
+    @Column(name = "valor")
     private double valentia;
     @Column(name = "tipo")
     private String tipo;
+
+    @Column(name = "nome_operador_transacao")
+    private String nomeOperadorTranscionado;
+    @Column(name = "conta_id")
+    private long conta_id;
+
 }
+//    @ManyToOne
+//    @JoinColumn(name = "conta_id")
+//    private Conta conta;
+

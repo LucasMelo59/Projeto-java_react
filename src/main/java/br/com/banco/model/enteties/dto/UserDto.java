@@ -13,25 +13,20 @@ import java.util.Date;
 @Getter
 @Setter
 public class UserDto {
-    private long id;
-    private double saldo;
-    private double saldoNoPeriodo;
-    private String nomeOperadorTranscionado;
-    private Date dataInicio;
-    private Date dataFim;
-    private double valentia;
-    private String tipo;
+    private Integer id;
+    private String name;
+    private Date data;
 
-    public static UserDto converter(User user){
-        var users  = new UserDto();
-        users.setId(user.getId());
-        users.setDataFim(user.getDataFim());
-        users.setDataInicio((user.getDataInicio()));
-        users.setSaldo(user.getSaldo());
-        users.setTipo(user.getTipo());
-        users.setValentia(user.getValentia());
-        users.setSaldoNoPeriodo(user.getSaldoNoPeriodo());
-        users.setNomeOperadorTranscionado(user.getNomeOperadorTranscionado());
-        return users;
-    }
+
+//    public static UserDto converter(User user){
+//        var users  = new UserDto();
+//        users.setId(user.getId());
+//        users.setDataInicio((user.getDataInicio()));
+//        users.setSaldo(user.getSaldo());
+//        users.setTipo(user.getTipo());
+//        users.setValentia(user.getValentia());
+//        users.setSaldoNoPeriodo(user.getSaldoNoPeriodo());
+//        users.setNomeOperadorTranscionado(user.getNomeOperadorTranscionado());
+//        return users;
+//    }
 }

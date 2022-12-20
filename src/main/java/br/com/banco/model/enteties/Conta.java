@@ -23,6 +23,4 @@ public class Conta {
     @Column(name = "nome_responsavel")
     private String nome_responsavel;
 
-//    @OneToMany(mappedBy = "conta")
-//    private List<User> transferencia;
 }

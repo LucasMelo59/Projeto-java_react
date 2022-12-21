@@ -25,8 +25,11 @@ public class Transferencia {
     private String tipo;
     @Column(name = "nome_operador_transacao")
     private String nomeOperadorTranscionado;
-    @Column(name = "conta_id")
-    private long conta_id;
+//    @OneToOne
+//    @JoinColumn(name = "conta_id")
+//    private Conta conta;
+    @Column( name = "conta_id")
+    private Integer conta_id;
 
 }
 

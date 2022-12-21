@@ -1,5 +1,6 @@
 package br.com.banco.model.enteties.dto;
 
+import br.com.banco.model.enteties.Conta;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,6 +14,8 @@ import java.util.Date;
 public class UserDto {
     private Integer id;
     private String nome;
-    private Date data;
+    private String inicio;
+    private String fim;
+    private Integer conta_id;
 
 }

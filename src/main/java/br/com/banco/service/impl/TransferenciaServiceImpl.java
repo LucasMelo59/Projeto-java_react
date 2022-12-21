@@ -16,7 +16,7 @@ public class TransferenciaServiceImpl implements TransferenciaService {
     private TransferenciaRepository transferenciaRepository;
     @Override
     public List<Transferencia> findByCustom(UserDto dto) {
-        return transferenciaRepository.getUserWithCustom(dto.getNome(), null);
+        return transferenciaRepository.getUserWithCustom(dto.getNome(), dto.getInicio(), dto.getFim(), 1);
     }
 
 }

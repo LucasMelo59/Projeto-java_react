@@ -10,10 +10,9 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
-public class TransferenciaDto {
+public class UserDto {
     private Integer id;
     private String nome;
     private Date data;
-    private Long conta_id;
 
 }

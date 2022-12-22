@@ -8,26 +8,25 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity
+@Entity(name = "transferencia")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "transferencia")
 public class Transferencia {
     @Id
     @Column(name = "id")
     private Integer id;
     @Column(name = "data_transferencia")
-    private Date data_transferencia;
+    private Date dataInicio;
     @Column(name = "valor")
-    private double valor;
+    private double valentia;
     @Column(name = "tipo")
     private String tipo;
     @Column(name = "nome_operador_transacao")
-    private String nome_operador_transacao;
+    private String nomeOperadorTranscionado;
     @Column(name = "conta_id")
-    private Integer conta_id;
+    private long conta_id;
 
 }
 

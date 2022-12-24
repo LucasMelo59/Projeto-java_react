@@ -18,10 +18,8 @@ public class Transferencia {
     @Id
     @Column(name = "id")
     private Integer id;
-    @Column(name = "data_transferencia_inicio")
-    private Date data_transferencia_inicio;
-    @Column(name = "data_transferencia_fim")
-    private Date data_transferencia_fim;
+    @Column(name = "data_transferencia")
+    private Date data_transferencia;
     @Column(name = "valor")
     private double valor;
     @Column(name = "tipo")

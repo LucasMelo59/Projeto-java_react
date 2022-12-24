@@ -1,5 +1,6 @@
 package br.com.banco.controllers;
 
+import br.com.banco.model.dto.TransferenciaDto;
 import br.com.banco.model.enteties.Transferencia;
 import br.com.banco.service.TransferenciaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class transferenciaController {
     private TransferenciaService transferenciaService;
 
     @PostMapping("/custom")
-    public List<Transferencia> findByCustom(@RequestBody Transferencia transferencia){
-        return transferenciaService.findByCustom(transferencia);
+    public List<Transferencia> findByCustom(@RequestBody TransferenciaDto transferenciaDto){
+        return transferenciaService.findByCustom(transferenciaDto);
     }
 }

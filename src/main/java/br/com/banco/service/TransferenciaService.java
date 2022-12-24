@@ -6,4 +6,6 @@ import br.com.banco.model.enteties.Transferencia;
 import java.util.List;
 public interface TransferenciaService {
     public List<Transferencia> findByCustom(TransferenciaDto transferenciaDto);
+
+    public Double roundTwoPlaces(double value);
 }

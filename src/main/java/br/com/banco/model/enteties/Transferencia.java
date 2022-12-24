@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -19,7 +20,7 @@ public class Transferencia {
     @Column(name = "id")
     private Integer id;
     @Column(name = "data_transferencia")
-    private Date data_transferencia;
+    private LocalDateTime data_transferencia;
     @Column(name = "valor")
     private double valor;
     @Column(name = "tipo")

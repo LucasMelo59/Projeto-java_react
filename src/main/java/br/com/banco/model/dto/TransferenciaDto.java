@@ -14,4 +14,19 @@ public class TransferenciaDto {
     private String data_inicio;
     private String data_fim;
     private String nome_operador;
+
+    public TransferenciaDto(String nome) {
+        this.nome_operador = nome;
+    }
+
+    public TransferenciaDto(String inicio, String fim) {
+        this.data_inicio = inicio;
+        this.data_fim = fim;
+    }
+
+    public TransferenciaDto(String nome, String inicio, String fim) {
+        this.nome_operador = nome;
+        this.data_inicio = inicio;
+        this.data_fim = fim;
+    }
 }

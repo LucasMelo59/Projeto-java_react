@@ -24,7 +24,7 @@ public class TransferenciaServiceImpl implements TransferenciaService {
                 .stream().peek(x -> x.setValor(roundTwoPlaces(x.getValor()))).collect(Collectors.toList());
     }
 
-    private Double roundTwoPlaces(double value) {
+    public Double roundTwoPlaces(double value) {
         BigDecimal bd = new BigDecimal(value);
         bd = bd.setScale(2, RoundingMode.HALF_UP);
         return bd.doubleValue();
